@@ -14,4 +14,6 @@ sudo apt-get install -y glances
 sudo apt-get install -y bat
 sudo apt-get install -y tig
 sudo apt-get install -y ntfs-3g
+sudo apt-get install -y exfat-fuse
+sudo apt-get install -y lrzsz
 sudo modprobe fuse

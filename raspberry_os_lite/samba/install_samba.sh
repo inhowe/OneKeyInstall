@@ -12,5 +12,4 @@ sudo service smbd restart
 
 echo "SAMBA挂载地址：\\树莓派ip地址\pi"  >> Read_Me_After_Install.txt
 echo "SAMBA挂载地址：\\树莓派ip地址\HDD"  >> Read_Me_After_Install.txt
-echo "SAMBA挂载地址：\\树莓派ip地址\SSD"  >> Read_Me_After_Install.txt
 echo "如果不能映射网络驱动器，尝试在cmd窗口里执行net use * /delete"  >> Read_Me_After_Install.txt

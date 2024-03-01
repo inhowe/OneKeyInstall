@@ -17,6 +17,10 @@ file="./zsh/install_zsh.sh"
 chmod +x $file
 $file
 
+file="./vim/install_vim.sh"
+chmod +x $file
+$file
+
 # OMV 会和磁盘挂载和samba冲突
 echo "Do you want to install OMV?[Y/n]"
 echo "(OMV is not tested!)"

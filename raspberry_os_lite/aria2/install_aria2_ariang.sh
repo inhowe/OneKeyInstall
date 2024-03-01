@@ -1,6 +1,6 @@
 echo "Install Aria2"
 sudo apt-get install -y aria2
-mkdir -p /home/pi/HDD/download
+mkdir -p /home/pi/download
 mkdir -p /home/pi/.config/aria2
 sudo cp $(dirname $0)/aria2.config /home/pi/.config/aria2/aria2.config
 sudo cp $(dirname $0)/aria2.session /home/pi/.config/aria2/aria2.session

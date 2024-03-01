@@ -2,7 +2,7 @@ sudo apt-get install -y ntfs-3g
 sudo apt-get install -y exfat-fuse
 sudo modprobe fuse
 
-sudo mkdir -p ~/HDD
+mkdir -p ~/HDD
 
 sudo cp /etc/fstab $(dirname $0)/fstab
 sudo chmod 755 $(dirname $0)/fstab

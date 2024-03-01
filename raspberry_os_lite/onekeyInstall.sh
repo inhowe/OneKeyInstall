@@ -4,6 +4,8 @@ if [ `whoami` != "pi" ]; then
 fi
 
 sudo rm -rf Read_Me_After_Install.txt
+touch Read_Me_After_Install.txt
+chmod 666 Read_Me_After_Install.txt
 sudo apt-get -y update
 sudo apt-get -y upgrade
 
@@ -33,8 +35,7 @@ case $answer in
 	file="./samba/install_samba.sh"
 	chmod +x $file
 	$file
-	;;
-	
+
 	file="./aria2/install_aria2_ariang.sh"
 	chmod +x $file
 	$file

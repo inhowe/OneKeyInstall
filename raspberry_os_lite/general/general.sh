@@ -1,5 +1,18 @@
 echo "config raspberry"
-sudo cp $(dirname $0)/config.txt /boot/firmware/config.txt
+
+echo "Do you want to map uart console to GPIO14/15?[Y/n]"
+read answer
+case $answer in
+(Y | y)
+	sudo cp $(dirname $0)/config.txt /boot/firmware/config.txt
+	;;
+(N | n)
+	echo "skip uart map"
+	;;
+(*)
+	sudo cp $(dirname $0)/config.txt /boot/firmware/config.txt
+	;;
+esac
 
 echo "Install command"
 sudo apt-get install -y vim
@@ -21,4 +34,6 @@ sudo apt-get install -y ack
 sudo apt-get install -y iftop
 sudo apt-get install -y exa
 sudo apt-get install -y duf
+sudo apt-get install -y python3-pip
+sudo apt-get install -y pipx
 sudo modprobe fuse

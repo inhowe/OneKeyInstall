@@ -48,5 +48,9 @@ case $answer in
 	echo "error choice";;
 esac
 
+file="./bt/bt.sh"
+chmod +x $file
+$file
+
 echo "script finished!"
 sudo reboot

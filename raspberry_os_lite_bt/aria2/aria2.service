@@ -1,0 +1,10 @@
+[Unit]
+Description=Aria2 Service
+After=network.target
+
+[Service]
+User=pi    
+ExecStart=/usr/bin/aria2c --conf-path=/home/pi/.config/aria2/aria2.config
+
+[Install]
+WantedBy=default.target

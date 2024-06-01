@@ -1,0 +1,10 @@
+# 如何备份
+    1 全量备份
+    dd bs=4M if=/dev/mmcblk0 of=/mnt/HDD/pi.img
+    2 压缩镜像
+    zip /mnt/HDD/pi.img.zip /mnt/HDD/pi.img
+
+# 如何恢复
+    1. 在PC上解压镜像
+    2. 使用"树莓派镜像烧录器"烧录到SD卡即可
+    3. 全量备份不能恢复到更小大小的卡上

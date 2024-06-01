@@ -21,11 +21,12 @@ file="./vim/install_vim.sh"
 chmod +x $file
 $file
 
-file="./samba/install_samba.sh"
+# 不能自动挂载
+file="./mount_disk/mount_disk.sh"
 chmod +x $file
 $file
 
-file="./mount_disk/mount_disk.sh"
+file="./samba/install_samba.sh"
 chmod +x $file
 $file
 

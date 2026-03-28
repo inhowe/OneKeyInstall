@@ -34,6 +34,10 @@ file="./aria2/install_aria2_ariang.sh"
 chmod +x $file
 $file
 
+file="./auto_startup/install_auto_startup.sh"
+chmod +x $file
+$file
+
 file="./bt/bt.sh"
 chmod +x $file
 $file

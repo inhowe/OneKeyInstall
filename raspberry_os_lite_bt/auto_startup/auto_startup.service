@@ -1,0 +1,15 @@
+[Unit]
+Description=My Auto Startup Script Service
+After=network.target
+
+[Service]
+Type=idle
+ExecStart=/bin/auto_startup.sh
+User=root
+Restart=on-failure
+StandardOutput=kmsg
+StandardError=kmsg
+SyslogIdentifier=AutoStartup
+
+[Install]
+WantedBy=multi-user.target

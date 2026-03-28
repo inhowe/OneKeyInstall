@@ -26,7 +26,7 @@ if [ $? -ne 0 ]; then
 fi
 cat $(dirname $0)/fstab | grep SSD
 if [ $? -ne 0 ]; then
-	sudo echo "/dev/sdb1	/mnt/SSD	exfat	defaults,nofail,uid=1000,gid=1000	0	0" >> $(dirname $0)/fstab
+	sudo echo "/dev/sdb1	/mnt/EXT_SSD	ext4	defaults,nofail,uid=1000,gid=1000	0	0" >> $(dirname $0)/fstab
 fi
 
 sudo chown root:root $(dirname $0)/fstab
